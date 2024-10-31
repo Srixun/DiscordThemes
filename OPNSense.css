@@ -1,0 +1,104 @@
+/**
+ * @name OPNSenseTheme
+ * @description OPNSense-inspired dark theme for Discord
+ * https://discord.gg/X6cSuuheGG
+ */
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #f05032; /* Bright orange for highlights (OPNSense accent color) */
+  --hover-color: #c13e26; /* Darker orange for hover effect */
+  --success-color: #3a9b3f; /* Green for success */
+  --danger-color: #b43a32; /* Dark red for danger */
+  --url-color: var(--main-color);
+
+  /* STATUS COLORS */
+  --online-color: #3a9b3f; /* Green for online */
+  --idle-color: #e6a700; /* Yellow-orange for idle */
+  --dnd-color: #b43a32; /* Red for DND */
+  --streaming-color: #5a5a5a; /* Gray for streaming */
+  --offline-color: #4d4d4d; /* Dark gray for offline/invisible */
+
+  /* GENERAL */
+  --main-font: "Segoe UI", Tahoma, Geneva, sans-serif; /* Clean sans-serif font */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --text-normal: #dcdcdc; /* Light gray text color for readability */
+  --text-muted: #9b9b9b; /* Darker muted gray for subtle text */
+  --channels-width: 220px;
+  --members-width: 240px;
+  --server-unread: var(--main-color);
+
+  /* APP BACKGROUND */
+  --background-shading: 100%;
+  --background-overlay: #1e1e1e; /* Dark gray background */
+  --background-image: none;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 95%;
+  --background-contrast: 100%;
+  --background-saturation: 90%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 0%;
+  --background-blur: 0px;
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: 40px;
+
+  /* SIDE PANELS */
+  --sidebar-bg: #252525; /* Dark gray for side panels */
+  --sidebar-hover: #323232; /* Slightly lighter gray for hover */
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255, 255, 255, 0.2); /* Softer color for read channels */
+  --channel-text-selected: #ffffff; /* White for selected channel text */
+  --muted-color: rgba(255, 255, 255, 0.1); /* Muted transparency for muted channels */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(30, 30, 30, 0.85); /* Consistent dark overlay for modals */
+  --backdrop-image: none;
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: none;
+  --user-popout-overlay: rgba(30, 30, 30, 0.85); /* Consistent overlay for popouts */
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-brightness: var(--background-brightness);
+  --user-popout-contrast: var(--background-contrast);
+  --user-popout-saturation: var(--background-saturation);
+  --user-popout-invert: var(--background-invert);
+  --user-popout-grayscale: var(--background-grayscale);
+  --user-popout-sepia: var(--background-sepia);
+  --user-popout-blur: calc(var(--background-blur) + 3px);
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: none;
+  --user-modal-overlay: rgba(30, 30, 30, 0.85); /* Same overlay for modal */
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-brightness: var(--background-brightness);
+  --user-modal-contrast: var(--background-contrast);
+  --user-modal-saturation: var(--background-saturation);
+  --user-modal-invert: var(--background-invert);
+  --user-modal-grayscale: var(--background-grayscale);
+  --user-modal-sepia: var(--background-sepia);
+  --user-modal-blur: calc(var(--background-blur) + 3px);
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* Set BD colors to match orange accent */
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+}
