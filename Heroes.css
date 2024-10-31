@@ -1,0 +1,72 @@
+/**
+ * @name HEROES Gaming Group
+ */
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #e63946; /* Red for highlights */
+  --hover-color: #a62832; /* Darker red for hover effect */
+  --success-color: #43b581;
+  --danger-color: #982929;
+  --url-color: var(--main-color);
+
+  /* STATUS COLORS */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+
+  /* GENERAL */
+  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --text-normal: #e0e0e0; /* Lighter text for visibility */
+  --text-muted: #9c9c9c; /* Lighter muted text */
+  --channels-width: 220px;
+  --members-width: 240px;
+  --server-unread: var(--main-color);
+
+  /* APP BACKGROUND */
+  --background-shading: 100%;
+  --background-overlay: #000000; /* Solid black background */
+  --background-image: none;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 0%;
+  --background-blur: 0px;
+
+  /* SIDE PANELS */
+  --sidebar-bg: #1a1a1a; /* Very dark gray for side panels */
+  --sidebar-hover: #2a2a2a; /* Slightly lighter gray for hover effect */
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255, 255, 255, 0.15); /* Slightly more visible */
+  --channel-text-selected: #ffffff; /* White for selected channel text */
+  --muted-color: rgba(255, 255, 255, 0.08); /* Slight transparency for muted channels */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(0, 0, 0, 0.1); /* Minimal transparency in modals */
+  --backdrop-image: none;
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: none;
+  --user-popout-overlay: rgba(0, 0, 0, 0.1); /* Slight transparency for popout overlay */
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: none;
+  --user-modal-overlay: rgba(0, 0, 0, 0.1); /* Minimal transparency for modal overlay */
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+}
