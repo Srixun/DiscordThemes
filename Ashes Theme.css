@@ -1,0 +1,73 @@
+/**
+ * @name AoCTheme
+ * @description Ashes of Creation-inspired dark theme for Discord
+ */
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #b88a35; /* Golden accent for highlights */
+  --hover-color: #8e6c29; /* Darker gold for hover effect */
+  --success-color: #6cbb3c; /* Earthy green for success */
+  --danger-color: #992020; /* Deep red for danger */
+  --url-color: var(--main-color);
+
+  /* STATUS COLORS */
+  --online-color: #6cbb3c; /* Earthy green for online status */
+  --idle-color: #d1a334; /* Warm yellow for idle */
+  --dnd-color: #992020; /* Deep red for DND */
+  --streaming-color: #5b3a85; /* Dark purple for streaming */
+  --offline-color: #4b4b4b; /* Gray for offline/invisible */
+
+  /* GENERAL */
+  --main-font: "Merriweather", serif; /* Fantasy-inspired serif font */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --text-normal: #e4e0d8; /* Light beige text color for readability */
+  --text-muted: #a39684; /* Muted beige for subtle text */
+  --channels-width: 220px;
+  --members-width: 240px;
+  --server-unread: var(--main-color);
+
+  /* APP BACKGROUND */
+  --background-shading: 100%;
+  --background-overlay: #201a15; /* Dark brown background */
+  --background-image: none;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 95%; /* Slightly muted background brightness */
+  --background-contrast: 100%;
+  --background-saturation: 90%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 10%; /* Slight sepia effect for warmth */
+  --background-blur: 0px;
+
+  /* SIDE PANELS */
+  --sidebar-bg: #2e2b25; /* Dark earthy gray-brown for side panels */
+  --sidebar-hover: #3c372f; /* Slightly lighter for hover effect */
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255, 255, 255, 0.15); /* Soft, muted color for read channels */
+  --channel-text-selected: #f2e7d4; /* Warm off-white for selected channel text */
+  --muted-color: rgba(255, 255, 255, 0.1); /* Muted transparency for muted channels */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(32, 26, 21, 0.85); /* Brownish overlay for modals */
+  --backdrop-image: none;
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: none;
+  --user-popout-overlay: rgba(32, 26, 21, 0.85); /* Same earthy tone for popout overlay */
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: none;
+  --user-modal-overlay: rgba(32, 26, 21, 0.85); /* Consistent theme for modal overlay */
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* Setting BD colors to match golden accent */
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+}
