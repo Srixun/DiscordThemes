@@ -1,0 +1,115 @@
+/**
+ * @name WoWHordeTheme
+ * @description World of Warcraft Horde-inspired theme for Discord. Made by Srixun.
+ */
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #c41e3a; /* Dark red for Horde accent */
+  --hover-color: #8b1529; /* Darker red for hover effect */
+  --success-color: #4caf50; /* Green for success */
+  --danger-color: #8b1529; /* Deep red for danger */
+  --url-color: var(--main-color);
+
+  /* STATUS COLORS */
+  --online-color: #4caf50; /* Green for online */
+  --idle-color: #f1c40f; /* Yellow for idle */
+  --dnd-color: #c41e3a; /* Horde red for DND */
+  --streaming-color: #6e1e1e; /* Dark red-brown for streaming */
+  --offline-color: #555555; /* Gray for offline/invisible */
+
+  /* GENERAL */
+  --main-font: "Merriweather", serif; /* Fantasy-inspired serif font */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --text-normal: #e4e4e4; /* Light gray text color for readability */
+  --text-muted: #a8a8a8; /* Darker muted gray */
+  --channels-width: 220px;
+  --members-width: 240px;
+  --server-unread: var(--main-color);
+
+  /* APP BACKGROUND */
+  --background-shading: 100%;
+  --background-overlay: #1c1c1c; /* Dark gray-black background */
+  --background-image: none;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 90%;
+  --background-contrast: 100%;
+  --background-saturation: 90%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 5%; /* Slight warmth */
+  --background-blur: 0px;
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: 40px;
+
+  /* SIDE PANELS */
+  --sidebar-bg: #2a1a1a; /* Dark red-black for side panels */
+  --sidebar-hover: #3e2727; /* Slightly lighter red for hover effect */
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255, 255, 255, 0.15); /* Muted color for read channels */
+  --channel-text-selected: #ffffff; /* White for selected channel text */
+  --muted-color: rgba(255, 255, 255, 0.1); /* Subtle muted transparency */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(28, 28, 28, 0.85); /* Consistent dark overlay */
+  --backdrop-image: none;
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: none;
+  --user-popout-overlay: rgba(28, 28, 28, 0.85); /* Dark overlay for popouts */
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-brightness: var(--background-brightness);
+  --user-popout-contrast: var(--background-contrast);
+  --user-popout-saturation: var(--background-saturation);
+  --user-popout-invert: var(--background-invert);
+  --user-popout-grayscale: var(--background-grayscale);
+  --user-popout-sepia: var(--background-sepia);
+  --user-popout-blur: calc(var(--background-blur) + 3px);
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: none;
+  --user-modal-overlay: rgba(28, 28, 28, 0.85); /* Consistent dark overlay for modals */
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-brightness: var(--background-brightness);
+  --user-modal-contrast: var(--background-contrast);
+  --user-modal-saturation: var(--background-saturation);
+  --user-modal-invert: var(--background-invert);
+  --user-modal-grayscale: var(--background-grayscale);
+  --user-modal-sepia: var(--background-sepia);
+  --user-modal-blur: calc(var(--background-blur) + 3px);
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* Set BD colors to match Horde red */
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+}
+
+/* Minor Visible Credit */
+#app-mount::after {
+  content: "WoW Horde Theme - Made by Srixun";
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 10px;
+  color: rgba(196, 30, 58, 0.5); /* Subtle Horde red */
+  pointer-events: none;
+  opacity: 0.5;
+}
