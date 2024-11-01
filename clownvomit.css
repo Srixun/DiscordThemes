@@ -1,0 +1,128 @@
+/**
+ * @name Rainbow R Worrior Theme
+ * @description Im R Worrior! I r Kai! - in every section, with a subtle rainbow effect. Made by Srixun.
+ */
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #ff69b4; /* Hot pink */
+  --hover-color: #ff1493; /* Darker pink for hover effect */
+  --success-color: #32cd32; /* Bright green for success */
+  --danger-color: #ff4500; /* Bright red for danger */
+  --url-color: #ffa500; /* Orange for URLs */
+
+  /* STATUS COLORS */
+  --online-color: #32cd32; /* Green for online */
+  --idle-color: #ffdb58; /* Yellow for idle */
+  --dnd-color: #ff4500; /* Bright red for DND */
+  --streaming-color: #4169e1; /* Bright blue for streaming */
+  --offline-color: #8a2be2; /* Bright purple for offline */
+
+  /* GENERAL */
+  --main-font: "Comic Sans MS", "Impact", sans-serif; /* Bold fonts */
+  --code-font: "Comic Sans MS", "Impact", sans-serif;
+  --text-normal: #ffffff; /* White for readability */
+  --text-muted: #ffb6c1; /* Light pink for muted text */
+  --channels-width: 220px;
+  --members-width: 240px;
+  --server-unread: var(--main-color);
+
+  /* APP BACKGROUND */
+  --background-shading: 100%;
+  --background-overlay: #222222; /* Dark background */
+  --background-image: none;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 90%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-invert: 0%;
+  --background-grayscale: 0%;
+  --background-sepia: 0%;
+  --background-blur: 0px;
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: 40px;
+
+  /* SIDE PANELS */
+  --sidebar-bg: #333333; /* Dark gray for side panels */
+  --sidebar-hover: #444444; /* Slightly lighter gray for hover */
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255, 255, 255, 0.8); /* Bright white */
+  --channel-text-selected: #ff4500; /* Orange-red */
+  --muted-color: rgba(255, 182, 193, 0.6); /* Light pink muted */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(34, 34, 34, 0.85); /* Subtle dark overlay */
+  --backdrop-image: none;
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: none;
+  --user-popout-overlay: rgba(34, 34, 34, 0.85);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-brightness: var(--background-brightness);
+  --user-popout-contrast: var(--background-contrast);
+  --user-popout-saturation: var(--background-saturation);
+  --user-popout-invert: var(--background-invert);
+  --user-popout-grayscale: var(--background-grayscale);
+  --user-popout-sepia: var(--background-sepia);
+  --user-popout-blur: calc(var(--background-blur) + 3px);
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: none;
+  --user-modal-overlay: rgba(34, 34, 34, 0.85); /* Dark overlay for modal */
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-brightness: var(--background-brightness);
+  --user-modal-contrast: var(--background-contrast);
+  --user-modal-saturation: var(--background-saturation);
+  --user-modal-invert: var(--background-invert);
+  --user-modal-grayscale: var(--background-grayscale);
+  --user-modal-sepia: var(--background-sepia);
+  --user-modal-blur: calc(var(--background-blur) + 3px);
+
+  /* THEME BD COLORS */
+  --bd-blue: #32cd32; /* Bright green for extra visibility */
+  --bd-blue-hover: #ff69b4; /* Hot pink hover */
+  --bd-blue-active: #ff6347; /* Tomato active */
+}
+
+/* Subtle Rainbow Text */
+@keyframes rainbowText {
+  0% { color: #ff0000; } /* Red */
+  20% { color: #ff7f00; } /* Orange */
+  40% { color: #ffff00; } /* Yellow */
+  60% { color: #00ff00; } /* Green */
+  80% { color: #0000ff; } /* Blue */
+  100% { color: #8b00ff; } /* Purple */
+}
+h1, h2, h3, h4, h5, h6, p, a, span, div, button, label, select, option, ul, ol, li {
+  animation: rainbowText 5s linear infinite;
+}
+
+/* Minor Visible Credit */
+#app-mount::after {
+  content: "Im R Worrior! I r Kai! - Theme by Srixun";
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 10px;
+  color: rgba(255, 105, 180, 0.8); /* Subtle pink */
+  pointer-events: none;
+  opacity: 0.5;
+}
