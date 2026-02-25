@@ -1,8 +1,8 @@
 /**
  * @name The Quinfall
  * @author Srixun
- * @version 2.0.1
- * @description Aggressive structural overhaul. Transparent panels, deep cinematic backgrounds, custom fonts, and rich gold/bronze framing. Fixed hover shift bug.
+ * @version 2.1.0
+ * @description Aggressive structural overhaul. Transparent panels, deep cinematic backgrounds, custom fonts, rich gold/bronze framing, and static Amber highlight for a specific user.
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
@@ -164,4 +164,36 @@ h1, h2, h3, h4, h5, [class*="heading"], [class*="title"] {
   background: rgba(212, 160, 56, 0.4) !important;
   color: var(--qf-flare) !important;
   text-shadow: 0 0 8px rgba(255, 223, 128, 0.8);
+}
+
+/* ======================================================================== */
+/* CUSTOM USER HIGHLIGHT: Static Amber Override                             */
+/* ======================================================================== */
+
+/* 1. Force the Amber Yellow color on the name in ALL locations */
+div#app-mount [class*="message_"]:has([src*="159075434305290240"]) [class*="username_"],
+div#app-mount [class*="message_"]:has([src*="159075434305290240"]) [class*="username_"] span,
+div#app-mount [class*="member_"]:has([src*="159075434305290240"]) [class*="name_"],
+div#app-mount [class*="member_"]:has([src*="159075434305290240"]) [class*="name_"] span,
+div#app-mount [data-author-id="159075434305290240"] [class*="username_"],
+div#app-mount [data-author-id="159075434305290240"] [class*="username_"] span,
+div#app-mount [data-user-id="159075434305290240"] [class*="name_"],
+div#app-mount [data-user-id="159075434305290240"] [class*="name_"] span {
+  color: #ffd700 !important; 
+  text-shadow: 0 0 4px rgba(255, 170, 0, 0.4) !important; 
+  font-weight: 800 !important;
+}
+
+/* 2. Subtle Message Block Highlight (Only in chat) */
+div#app-mount [class*="message_"]:has([src*="159075434305290240"]),
+div#app-mount [class*="message_"][data-author-id="159075434305290240"] {
+  background-color: rgba(255, 215, 0, 0.03) !important;
+  border-left: 2px solid rgba(255, 215, 0, 0.25) !important;
+}
+
+div#app-mount [class*="message_"]:has([src*="159075434305290240"]):hover,
+div#app-mount [class*="message_"][data-author-id="159075434305290240"]):hover {
+  background-color: rgba(255, 215, 0, 0.06) !important;
+  border-left: 2px solid rgba(255, 215, 0, 0.5) !important;
+  box-shadow: none !important;
 }
