@@ -1,8 +1,8 @@
 /**
  * @name The Quinfall (Clean & Simple)
  * @author Srixun
- * @version 4.0.0
- * @description Clean, minimalist Quinfall theme. High contrast with a pitch-black member list. Features the ultimate Nitro Nuke to physically delete injected profile banners and gradients.
+ * @version 4.1.0
+ * @description Clean, minimalist Quinfall theme. High contrast with a pitch-black member list. Features the ultimate targeted Nitro Nuke to physically delete injected profile banners and gradients.
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap');
@@ -47,7 +47,7 @@ div#app-mount, [class^="bg_"], body {
 }
 
 /* ======================================================================== */
-/* THE BLACKOUT PROTOCOL: PITCH BLACK MEMBER LIST & NITRO NUKE              */
+/* THE BLACKOUT PROTOCOL: PITCH BLACK MEMBER LIST & DIRECT NITRO NUKE       */
 /* ======================================================================== */
 
 /* 1. Force the entire member list sidebar to be pure black */
@@ -69,17 +69,20 @@ div#app-mount, [class^="bg_"], body {
   border: none !important;
 }
 
-/* 3. THE NUKE: Deletes ANY structural layer Discord injects that isn't the avatar or text */
-/* This specifically targets the SVGs and absolute-positioned divs used for Nitro banners */
-[class^="member_"] > [class^="layout_"] > :not([class*="avatar_"]):not([class*="content_"]) {
+/* 3. THE TARGETED NUKE: Destroys the specific gradient container you found */
+.container__4bbc6,
+[class*="container__4bbc6"],
+[class^="member_"] [class^="layout_"] > [class^="container_"] {
   display: none !important;
   opacity: 0 !important;
+  visibility: hidden !important;
   pointer-events: none !important;
   width: 0 !important;
   height: 0 !important;
+  background: transparent !important;
 }
 
-/* 4. Strip Nitro inline variable injections */
+/* 4. Strip Nitro inline variable injections just in case */
 [class^="member_"] {
   --profile-gradient-primary-color: transparent !important;
   --profile-gradient-secondary-color: transparent !important;
